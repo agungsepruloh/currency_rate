@@ -1,0 +1,12 @@
+repos:
+  - repo: https://github.com/OCA/maintainer-tools
+    rev: 9a170331575a265c092ee6b24b845ec508e8ef75
+    hooks:
+      - id: oca-gen-addon-readme
+        args:
+          - --addons-dir=.
+          - --org-name=agungsepruloh
+          - --repo-name=currency_rate
+          - --branch=17.0
+          - --if-source-changed
+      - id: oca-gen-addons-table
