@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Invoice Currency Rate",
+    'name': "Invoice/Bills Currency Rate",
 
     'summary': """
         This module helps to show currency rate in the Invoices and Bills form view for multi-currency companies.
