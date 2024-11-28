@@ -5,7 +5,7 @@
             <field name="model">account.move</field>
             <field name="inherit_id" ref="account.view_move_form"/>
             <field name="arch" type="xml">
-                <xpath expr="//group[@id='header_right_group']/field[@name='currency_id']" position="after">
+                <xpath expr="//div[@name='currency_conversion_div']" position="replace">
                     <field name="currencies_are_different" invisible="1"/>
                     <div class="break"/>
                     <div invisible="not currencies_are_different" class="text-muted">
