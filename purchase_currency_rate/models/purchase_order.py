@@ -4,12 +4,6 @@ from odoo import models, fields, api, _
 class PurchaseOrder(models.Model):
     _inherit = 'purchase.order'
 
-    company_currency_id = fields.Many2one(
-        comodel_name='res.currency',
-        string="Company Currency",
-        related='company_id.currency_id',
-        help="Utility field to express amount currency"
-    )
     currencies_are_different = fields.Boolean(
         string="Currencies are different",
         compute='_compute_currencies_are_different',
